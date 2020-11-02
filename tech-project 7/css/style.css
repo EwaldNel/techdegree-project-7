@@ -637,3 +637,9 @@ svg {
         flex-grow: 1;
     }
 }
+
+@media (min-width: 1024px) {
+    .daily {
+        border-right: 1px solid #DFDFDF;
+    }
+}
