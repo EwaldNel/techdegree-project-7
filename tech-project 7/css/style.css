@@ -14,11 +14,13 @@
  -- */
 
 body {
-    font-family: 'Lato', sans-serif;
-    max-width: 1726px;
-    margin: 0 auto;
-    letter-spacing: .5px;
     color: #9c9c9c;
+    background-color: #F4F4F4;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+canvas {
+    margin-bottom: 10px;
 }
 
 p,
@@ -487,6 +489,80 @@ svg {
  /* --
     MEDIA QUERIES
  -- */
+
+ @media (max-width: 442px) {
+
+    h3,
+    .members,
+    .activity,
+    .form-area,
+    .form-field,
+    .settings,
+    .send,
+    .social-container {
+        max-width: 320px;
+    }
+
+    .send {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .traffic-nav li {
+        padding: 3px;
+        font-size: 13px;
+    }
+
+    .alert {
+        width: 90%;
+    }
+
+    .alert p,
+    .alert p strong {
+        font-size: 12px;
+    }
+
+    h3,
+    h2 {
+        font-size: 14px;
+    }
+
+    .main-search {
+        width: 80%; 
+        font-size: 12px;
+        padding-right: 30px;
+    }
+
+    .main-header-search {
+        justify-content: flex-start;
+        padding-left: 25px;
+        width: 60%;
+        border: none;
+    }
+
+    .main-header {
+        justify-content: start;
+    }
+
+    .members-container {
+        max-width: 320px;
+        display: grid;
+    }
+
+    .members-container p,
+    .members-container a,
+    .activity-container {
+        padding: 5px;
+    }
+
+    .members-date {
+        text-align: left;
+    }
+
+    .settings {
+        padding: 0;
+    }
+ }
 
  @media (min-width: 768px) {
     .grid-container {
